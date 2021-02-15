@@ -51,10 +51,4 @@ public class AllTests extends BaseTest {
         assertEquals("sdf", toCompare);
     }
 
-    @Disabled
-    @ParameterizedTest
-    @ValueSource(ints = {5, 3, 6, 300})
-    void exceptionCheck(int side) {
-        assertThrows(IllegalArgumentException.class, () -> new Shape(side));
-    }
 }
