@@ -13,11 +13,11 @@ public class BaseTest {
     static void beforeAll() {
         System.out.println("Before class");
         WebDriverManager.chromedriver().setup();
+        driver = new ChromeDriver();
     }
     @BeforeEach
     void init() {
         System.out.println("IN before method");
-        driver = new ChromeDriver();
     }
 
     @AfterEach
