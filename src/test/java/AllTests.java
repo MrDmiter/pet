@@ -1,3 +1,4 @@
+import io.qameta.allure.*;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -34,6 +35,11 @@ public class AllTests extends BaseTest {
     }
 
     @Test
+    @Description("Some description that describess our test")
+    @Epic("EPIC003")
+    @Feature("Feature1")
+    @Story("Cart verification")
+    @Step("Step click on cart")
     void thirdTest() {
         System.out.println("Inside test3");
         driver.get("https://www.jetbrains.com/");
